@@ -1,25 +1,38 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
   text-align: center;
 }
 
 h1 {
   text-decoration: underline;
+  text-align: center;
+  padding: 2rem;
 }
 
 ul {
   text-align: left;
+  margin-left: 2rem;
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
+  background-color: #21222a;
+  color: aliceblue;
+  width: 100%;
 }
 
 .icon {
-  width: 25%;
+  width: 100px;
+}
+
+.nav > h4 {
+  margin-right: auto;
+  margin-left: 1em;
 }
 
 .nav-list {
@@ -35,4 +48,23 @@ ul {
 .nav-list > li:hover {
   text-decoration: underline overline;
   cursor: pointer;
+}
+
+footer {
+  background-color: #21222a;
+  color: aliceblue;
+  margin-top: 4rem;
+  padding: 1em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.main--list > li {
+  line-height: 1.2;
+}
+
+.main--list > li::marker {
+  color: rgb(91, 154, 154);
+  font-size: 1.2rem;
 }
